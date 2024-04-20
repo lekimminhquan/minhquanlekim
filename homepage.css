@@ -1,0 +1,96 @@
+body{
+    background-color:black;
+    width: 100%;
+    color: whitesmoke;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    text-decoration: none;
+    margin: 25px;
+    color: gold;
+    font-family: "Honk", system-ui;
+    font-size: 50px;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+
+}
+
+#thanhmenu{
+    justify-content: space-between;
+}
+#thanhmenu ul li
+{
+    list-style-type: none;
+    margin-left: 30px;
+    border-bottom: 2px whitesmoke;
+    padding: 20px 10px;
+
+}
+#thanhmenu ul{
+    display: flex;
+    margin-top: 0px;
+    margin-right: 50px;
+    position: relative;
+    padding: 20px;
+    justify-content: space-between;
+}
+#thanhmenu ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    position:relative;
+    font-weight: 400;
+}
+
+#thanhmenu ul li a::after{
+    content:'';
+    height: 3px;
+    width:0;
+    background: gold;
+    position: absolute;
+    bottom: -2px;
+    left:0px;
+    transition: all 0.5s ease-in-out;
+}
+#thanhmenu ul li a:hover{
+    color:gold;
+}
+#thanhmenu ul li a:hover::after{
+    width: 50%;
+    transform: translateX(50%);
+}
+
+    
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}

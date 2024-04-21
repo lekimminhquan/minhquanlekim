@@ -13,12 +13,12 @@ header{
 .menu{
     text-decoration: none;
     margin: 25px;
-    color: gold;
     font-family: "Honk", system-ui;
-    font-size: 50px;
+    font-size: 60px;
     font-optical-sizing: auto;
     font-weight:400;
     font-style: normal;
+
 
 }
 
@@ -36,7 +36,7 @@ header{
 #thanhmenu ul{
     display: flex;
     margin-top: 0px;
-    margin-right: 50px;
+    margin-right: 40px;
     position: relative;
     padding: 20px;
     justify-content: space-between;
@@ -56,7 +56,7 @@ header{
     width:0;
     background: gold;
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
     left:0px;
     transition: all 0.5s ease-in-out;
 }
@@ -68,7 +68,30 @@ header{
     transform: translateX(50%);
 }
 
-    
+.active{ 
+    color: gold;
+    margin-top: 30px;
+    content: '';
+    position: absolute;
+    background: gold;
+    width: 0;
+    height: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.body1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.body2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+   
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

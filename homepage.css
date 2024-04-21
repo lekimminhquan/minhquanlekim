@@ -41,16 +41,16 @@ header{
     padding: 20px;
     justify-content: space-between;
 }
-#thanhmenu ul li a {
+.menu__item {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
     position:relative;
     font-weight: 400;
 }
 
-#thanhmenu ul li a::after{
+.menu__item::after{
     content:'';
     height: 3px;
     width:0;
@@ -58,9 +58,9 @@ header{
     position: absolute;
     bottom: -3px;
     left:0px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-#thanhmenu ul li a:hover{
+.menu__item:hover{
     color:gold;
 }
 #thanhmenu ul li a:hover::after{
@@ -68,18 +68,18 @@ header{
     transform: translateX(50%);
 }
 
-.active{ 
+.active{
+    position: relative;
     color: gold;
-    margin-top: 30px;
-    content: '';
-    position: absolute;
-    background: gold;
-    width: 0;
-    height: 3px;
-    top: 0;
-    bottom: 0;
-    left: 0;
+    border-bottom: 3px solid gold;
+    border-style:inset;
+    border-bottom-width: 3px;
+
 }
+
+
+
+
 
 
 .body1{

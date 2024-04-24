@@ -71,12 +71,29 @@ header{
 .active{
     position: relative;
     color: gold;
-    border-bottom: 3px solid gold;
+    border-bottom: 1px solid gold;
     border-style:inset;
     border-bottom-width: 3px;
+    animation: all 0.5s ease-in-out;
+    padding: auto;
 
 }
 
+.body2{
+    display: flex ;
+    padding-top:50px ;
+    justify-content: space-between;
+}
+
+.obj{
+    border: 2px solid gold;
+    height: 200px;
+    width: 290px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: start;
+    position: relative;
+}
 
 
 

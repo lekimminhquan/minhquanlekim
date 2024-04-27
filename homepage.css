@@ -18,9 +18,33 @@ header{
     font-optical-sizing: auto;
     font-weight:400;
     font-style: normal;
-
-
+    text-shadow: 0 2px 2px white;
 }
+
+.menuintro{
+    width: 35%;
+    text-decoration: none;
+    font-family: "Honk", system-ui;
+    font-size: 60px;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    animation: minhquan;
+    animation-duration: 4s;
+    padding-top: 275px;
+    text-shadow: 0 3px 2px white;
+    height: 100px;
+}
+
+@keyframes minhquan{
+0%{transform:translateY(-500px);}
+50%{transform: scale(1.5,1.5);}
+100%{transform:translate(-430px,-250px);}
+}
+
 
 #thanhmenu{
     justify-content: space-between;
@@ -40,14 +64,25 @@ header{
     position: relative;
     padding: 20px;
     justify-content: space-between;
-}
+    animation-name: menus;
+    animation-duration: 2s;
+} 
 .menu__item {
     text-decoration: none;
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Caveat", cursive;
     font-size: 22px;
     position:relative;
     font-weight: 400;
+   
+
+}
+
+@keyframes menus{
+    0%{transform: translateX(1000px);
+    }
+    50%{transform: translateX(-100px);}
+    100%{transform: translateX(0px);}
 }
 
 .menu__item::after{
@@ -74,41 +109,88 @@ header{
     border-bottom: 1px solid gold;
     border-style:inset;
     border-bottom-width: 3px;
-    animation: all 0.5s ease-in-out;
+    animation: all 0.5s step-end;
     padding: auto;
 
 }
 
 .body2{
     display: flex ;
-    padding-top:50px ;
-    justify-content: space-between;
+    padding-top:30px ;
+    justify-content:end;
+    margin-right: 120px;
 }
 
 .obj{
-    border: 2px solid gold;
-    height: 200px;
-    width: 290px;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: start;
     position: relative;
+    left: -6px;
+    overflow: hidden;
+    line-height: 35px;
+    letter-spacing:5px;
+    white-space:nowrap;
+    word-spacing: 0px;
+    font-size: 22px;
+    font-size: 25px;
+    color:gold;
+    border-right:5px solid gold ;
+    animation: typing 3s linear 1, 
+    caret 0.5s steps(2) infinite;
+
 }
+@keyframes caret{
+    from {
+        border-color:transparent ;
+    }
+    to {
+        border-color:gold ;
+    }
+}
+@keyframes typing{
+    from { 
+        width:0; 
+    }
+    to
+    {
+        width:100%;
+    }
+}
+.image{
+    width: 420px;
+    height: 400px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 250px;
+    border-bottom-right-radius: 200px;
+    box-shadow: 0px 0px 30px 3px gold;
+}
+
 
 
 
 
 
 .body1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold 700;
+    font-style: normal;
     font-size: 35px;
+    position:relative;
+    padding-top:30px;
+    justify-content: left;
+    margin: 40px;
+    margin-left: 120px;
 }
 
 .body2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
+
 }
    
+.home{
+   display: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

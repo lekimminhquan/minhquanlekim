@@ -1,4 +1,4 @@
-const intro = setTimeout(Intro,3900);
+const intro = setTimeout(Intro,3950);
 
 function Intro(){
    const y = document.getElementById("intro");
@@ -16,6 +16,10 @@ nodeList.forEach(nodeLists => {
         nodeLists.classList.add("active");
     }
 });
+
+
+const pos = document.getElementById('menu').style.location;
+console.log(pos);
 
 
 

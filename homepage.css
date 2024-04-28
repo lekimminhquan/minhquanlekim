@@ -22,6 +22,7 @@ header{
 }
 
 .menuintro{
+    position: relative;
     width: 35%;
     text-decoration: none;
     font-family: "Honk", system-ui;
@@ -40,9 +41,13 @@ header{
 }
 
 @keyframes minhquan{
-0%{transform:translateY(-500px);}
-50%{transform: scale(1.5,1.5);}
-100%{transform:translate(-430px,-250px);}
+0%{transform: translateY(-500px);
+}
+50%{transform: scale(1.5,1.5);
+}
+100% {transform: translate(-106.5%,-67%);}
+
+
 }
 
 
@@ -79,8 +84,7 @@ header{
 }
 
 @keyframes menus{
-    0%{transform: translateX(1000px);
-    }
+    0%{transform: translateX(1000px);}
     50%{transform: translateX(-100px);}
     100%{transform: translateX(0px);}
 }
@@ -135,6 +139,7 @@ header{
     border-right:5px solid gold ;
     animation: typing 3s linear 1, 
     caret 0.5s steps(2) infinite;
+    animation-delay: 1s;
 
 }
 @keyframes caret{

@@ -1,7 +1,8 @@
 body{
     background-color:black;
-    width: 100%;
     color: whitesmoke;
+    max-width: 100%;
+    height: auto;
 }
 
 header{
@@ -139,7 +140,6 @@ header{
     border-right:5px solid gold ;
     animation: typing 3s linear 1, 
     caret 0.5s steps(2) infinite;
-    animation-delay: 1s;
 
 }
 @keyframes caret{
@@ -191,6 +191,14 @@ header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
 
+}
+.icons li {
+    list-style-type: none;
+    
+}
+.icons li a {
+    text-decoration: none;
+    padding-right:20px ;
 }
    
 .home{

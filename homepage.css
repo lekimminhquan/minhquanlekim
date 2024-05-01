@@ -146,6 +146,7 @@ header{
 .Removetyping{
     animation: removetype 3s linear infinite,
     caret 0.5s steps(2) infinite;
+
 }
 @keyframes caret{
     from {
@@ -234,10 +235,12 @@ header{
     text-align: center;
     position: relative;
     top:30px;
+
     
 }
 .icons li a {
     text-decoration: none;
+
     padding-right:50px ;
     color: white;
     animation-name: icon;

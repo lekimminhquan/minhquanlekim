@@ -1,6 +1,5 @@
 
 const intro = setTimeout(Intro,3850);
-
 function Intro(){
    const y = document.getElementById("intro");
     y.remove()

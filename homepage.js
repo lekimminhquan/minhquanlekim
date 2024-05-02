@@ -19,7 +19,6 @@ nodeList.forEach(nodeLists => {
 
 
 
-
 setTimeout(Type,6000);
 
 function Type() {
@@ -63,14 +62,3 @@ function holdimage(){
     p.classList.add('image3');
     setTimeout(Image2,5000);
 }
-
-
-
-
-
-
-
-
-
-
-

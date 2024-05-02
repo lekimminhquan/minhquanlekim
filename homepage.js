@@ -8,13 +8,15 @@ function Intro(){
 }
 
 const nodeList = document.querySelectorAll('.menu__item');
-const windonwlink = window.location.pathname;
+const windonwlink = window.location.href;
+console.log(windonwlink);
 
 nodeList.forEach(nodeLists => {
-    if (nodeLists.href.includes(windonwlink))
+    if(nodeLists.href == windonwlink)
     {
         nodeLists.classList.add("active");
     }
+    
 });
 
 

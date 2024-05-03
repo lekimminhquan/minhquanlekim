@@ -265,6 +265,15 @@ header{
    License: none (public domain)
 */
 
+.-skill{
+    position: relative;
+    font-size: 35px;
+    padding-top: 300px;
+    margin: 200px;
+    font-family: "Caveat", cursive;
+    color: gold;
+    
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

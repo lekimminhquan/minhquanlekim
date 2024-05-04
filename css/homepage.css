@@ -1,13 +1,15 @@
-@import "{{ site.theme }}";
-body{
+@media only screen and (max-width:1347px) {
+    
+
+body{   
     background-color:black;
     color: whitesmoke;
     max-width: 100%;
     height: auto;
 }
-@import "{{ site.theme }}";
+
 header{
-    position: relative;
+    position:relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -47,7 +49,7 @@ header{
 }
 50%{transform: scale(1.5,1.5);
 }
-100% {transform: translate(-106.5%,-67%);}
+100% {transform: translate(-92%,-67%);}
 
 
 }
@@ -293,4 +295,306 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+
+}
+
+
+@media (min-width:1920px){
+
+    body{
+        background-color:black;
+        color: whitesmoke;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    header{
+        position:relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        text-decoration: none;
+        margin: 25px;
+        font-family: "Honk", system-ui;
+        font-size: 60px;
+        font-optical-sizing: auto;
+        font-weight:400;
+        font-style: normal;
+        text-shadow: 0 2px 2px white;
+    }
+    
+    .menuintro{
+        position: relative;
+        width: 35%;
+        text-decoration: none;
+        font-family: "Honk", system-ui;
+        font-size: 60px;
+        font-optical-sizing: auto;
+        font-weight:400;
+        font-style: normal;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        animation: minhquan;
+        animation-duration: 4s;
+        padding-top: 275px;
+        text-shadow: 0 3px 2px white;
+        height: 100px;
+    }
+    
+    @keyframes minhquan{
+    0%{transform: translateY(-500px);
+    }
+    50%{transform: scale(1.5,1.5);
+    }
+    100% {transform: translate(-106.6%,-67%);}
+    
+    
+    }
+    
+    
+    #thanhmenu{
+        justify-content: space-between;
+    }
+    #thanhmenu ul li
+    {
+        list-style-type: none;
+        margin-left: 30px;
+        border-bottom: 2px whitesmoke;
+        padding: 20px 10px;
+    
+    }
+    #thanhmenu ul{
+        display: flex;
+        margin-top: 0px;
+        margin-right: 40px;
+        position: relative;
+        padding: 20px;
+        justify-content: space-between;
+        animation-name: menus;
+        animation-duration: 2s;
+    } 
+    .menu__item {
+        text-decoration: none;
+        color: white;
+        font-family: "Caveat", cursive;
+        font-size: 22px;
+        position:relative;
+        font-weight: 400;
+    
+    }
+    
+    @keyframes menus{
+        0%{transform: translateX(1000px);}
+        50%{transform: translateX(-100px);}
+        100%{transform: translateX(0px);}
+    }
+    
+    .menu__item::after{
+        content:'';
+        height: 3px;
+        width:0;
+        background: gold;
+        position: absolute;
+        bottom: -3px;
+        left:0px;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu__item:hover{
+        color:gold;
+        text-transform:uppercase;
+    }
+    #thanhmenu ul li a:hover::after{
+        width: 50%;
+        transform: translateX(50%);
+    }
+    
+    .active{
+        position: relative;
+        color: gold;
+        border-bottom: 1px solid gold;
+        border-style:inset;
+        border-bottom-width: 3px;
+        padding: auto;
+    
+    }
+    
+    .body2{
+        display: flex ;
+        padding-top:30px ;
+        justify-content:end;
+        margin-right: 120px;
+    }
+    
+    .obj{
+        position: relative;
+        overflow: hidden;
+        line-height: 35px;
+        letter-spacing:5px;
+        white-space:nowrap;
+        word-spacing: 0px;
+        font-size: 22px;
+        font-size: 35px;
+        color:gold;
+        visibility:hidden;
+        border-right:5px solid gold ;
+        animation: caret 0.5s steps(2) infinite;
+    }
+    .type{
+        animation: typing 3s ease-in-out infinite, 
+        caret 0.5s steps(2) infinite;
+    }
+    .Removetyping{
+        animation: removetype 3s linear infinite,
+        caret 0.5s steps(2) infinite;
+    }
+    @keyframes caret{
+        from {
+            border-color:transparent ;
+        }
+        to {
+            border-color:gold ;
+        }
+    }
+    @keyframes typing{
+        from { 
+            width:0; 
+        }
+        to
+        {
+            width:100%;
+        }
+    }
+    
+    
+    @keyframes removetype{
+        from {width: 100%;}
+        to{width: 0;}
+    
+    }
+    
+    .image{
+        width: 420px;
+        height: 400px;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        border-top-left-radius: 250px;
+        border-bottom-right-radius: 200px;
+        border: 0 0 0 solid none;
+    }   
+    .image1{
+        animation: image1  3s  ease-in-out infinite;
+    }
+    @keyframes image1{
+        from{
+            box-shadow: transparent;
+        }
+        to{
+            box-shadow: 0px 0px 50px 10px whitesmoke;
+        }
+    }
+    .image2{
+        animation: image2 3s  ease-in-out infinite ;
+    }
+    @keyframes image2{
+        from{
+            box-shadow: 0px 0px 50px 10px whitesmoke;
+        }
+        to{
+            box-shadow: transparent;
+        }
+    }
+    
+    .image3{
+        box-shadow: 0px 0px 50px 10px whitesmoke;
+    }
+    
+    
+    
+    .body1{
+        font-family: "Caveat", cursive;
+        font-optical-sizing: auto;
+        font-weight: bold 700;
+        font-style: normal;
+        font-size: 50px;
+        position:relative;
+        padding-top:30px;
+        justify-content: left;
+        margin: 40px;
+        margin-left: 120px;
+        left: 30px;
+    }
+    
+    .body2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+    
+    }
+    .icons li {
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+        top:30px;
+        
+    }
+    .icons li a {
+        text-decoration: none;
+        padding-right:50px ;
+        color: white;
+        animation-name: icon;
+        animation-duration: 2s;
+    }
+    
+    @keyframes icon{
+        0%{
+            transform: translateX(-500px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+    .icons li a:hover{
+        color: gold;
+        transform: translateY(-10px) scale(1.25,1.25);
+    }
+    .home{
+       display: none;
+    }
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+    
+    .-skill{
+        position: relative;
+        font-size: 35px;
+        padding-top: 300px;
+        margin: 200px;
+        font-family: "Caveat", cursive;
+        color: gold;
+        
+    }
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
 }

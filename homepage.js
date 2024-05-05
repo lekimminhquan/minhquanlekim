@@ -16,10 +16,7 @@ nodeList.forEach(nodeLists => {
     {
         nodeLists.classList.add("active");
     }
-    
 });
-
-
 
 setTimeout(Type,6000);
 
